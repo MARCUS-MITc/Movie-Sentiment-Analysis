@@ -29,4 +29,20 @@ We are padding to ensure the each review of same size,(this is necessary if we a
 We can also chose to not to pad anything, then batch_size sould be set to 1
 
 
-# Sentiment Network with PyTorch
+# Document Classification Comparisons featuring Hierarchical Attention Network
+The Hierarchical Attention Network is a novel deep learning architecture that takes advantage of the hierarchical structure of documents to construct a detailed representation of the document. As words form sentences and sentences form the document, the Hierarchical Attention Network�s representation of the document uses this hierarchy in order to determine what sentences and what words in those sentences are most important in the classification of the document as a whole.
+![image](https://github.com/MARCUS-MITc/Movie-Sentiment-Analysis/assets/123622512/53b7e02d-e8ad-4cd2-a921-0ba27019db0f)
+
+This model uses two levels of LSTM encoders at the word and sentences level in order to build the word and sentence level representations of the document. The attention mechanism is used to attribute importance at the word and sentence level.
+
+There are two applications of the attention mechanism that attend over of the word level encoder and the sentence level encoder. These allow the model to construct a representation of the document that attribute greater levels of importance to key sentences and words throughout the document.
+
+# Results
+![image](https://github.com/MARCUS-MITc/Movie-Sentiment-Analysis/assets/123622512/bbeea3ff-dbf2-4268-88be-88f64478faac)
+
+Shown above is the training accuracy achieved during training of the HAN model after 120 thousand training steps on the IMDB dataset where the labels are converted to binary classes. As seen the maximum training accuracy achieved is approximately 64% accuracy.
+
+![image](https://github.com/MARCUS-MITc/Movie-Sentiment-Analysis/assets/123622512/4ec0aea7-2cae-4815-be70-6bf60ac9fcaa)
+
+Shown above is the training loss achieved during training of the HAN model after 120 thousand training steps on the IMDB dataset where the labels are converted to binary classes. The training loss seems to be steadily decreasing.
+
