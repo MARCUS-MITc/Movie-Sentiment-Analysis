@@ -17,7 +17,8 @@ These are the few applications of Sentiment Classification.
 But my motivation to this project is solely to gain knowledge and understanding by doing projects as reading research papers alone does not give me practical knowledge.
 # Dataset used
 https://ai.stanford.edu/~amaas/data/sentiment/
-We have Data present in two different text files *Reviews* and *Labels*
+
+All experiments were performed on the Stanford IMDB dataset which is a natural language dataset where movie reviews have labels that describe the sentiment of the movie review. This is one of the many datasets used in the original paper Hierarchical Attention Network. There are 8 different classes that describe the sentiment from 0-3 for negative sentiment to 6-10 for positive sentiment, which are mapped down to negative sentiment 0 and positive sentiment 1.
 # Data Preprocessing
 -- Removing punctuations
 -- Prepre data for modelling
